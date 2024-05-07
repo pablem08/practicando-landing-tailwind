@@ -5,23 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nucba NFT</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body>
   <header
-    class="bg-slate-900 fixed w-full flex justify-between items-center py-1 px-7 mx-auto h-16 sm:flex-row sm:py-0">
+    class="header">
     <img src="/img/logo.png" alt="Logo Nucba NFT">
     <nav>
       <ul class="flex justify-center items-center gap-3 sm:gap-4">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Descubre</a></li>
-        <li><a href="#">BTC</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">Contactanos</a></li>
+        <li><a href="#" class="text-white font-bold">Home</a></li>
+        <li><a href="#" class="text-slate-300">Descubre</a></li>
+        <li><a href="#" class="text-slate-300">BTC</a></li>
+        <li><a href="#" class="text-slate-300">YouTube</a></li>
+        <li><a href="#" class="text-slate-300">Contactanos</a></li>
       </ul>
     </nav>
   </header>
+  <main class="bg-gray-900 flex flex-col items-center justify-center text-white w-full">
+
+    <!-- Hero -->
+    <section class="mt-16 py-16 px-0 max-w-screen-xl flex items-center justify-center">
+      <div
+        class="w-full text-center flex gap-8 justify-center items-center flex-col lg:gap-5 lg:text-left lg:items-start">
+        <h1
+          class="w-11/12 max-w-lg text-5xl leading-normal font-extrabold bg-gradient-to-t from-sky-300 to-fuchsia-600 text-transparent bg-clip-text lg:w-4/5">
+          Descubre la nueva era de Crypto
+        </h1>
+        <p class="w-4/6 text-sm text-gray-300 sm:max-w-xl sm:w-7/12 lg:w-8/12">NUCBA NFT es el primer marketplace
+          educativo tecnológico de NFT, que son
+          elementos digitales épicos que
+          realmente puedes poseer. Los elementos digitales existen desde hace mucho tiempo,pero <span>Nucba</span> como
+          este.</p>
+        <a href="#" class="bg-blue-500 w-32 py-2 px-0 rounded-lg text-sm text-center">Be Nucber</a>
+      </div>
+      <div class="hidden w-72 bg-gray-700 p-5 rounded-lg flex flex-col justify-center gap-4 lg:flex">
+        <img src="/img/hero/hero-card.png" alt="BTC">
+        <!-- Contenedor Texto-->
+        <div class="flex flex-col gap-2.5">
+          <div class="flex  items-center justify-around gap-2.5">
+            <h3 class="font-semibold text-base whitespace-nowrap overflow-hidden text-ellipsis">"The Greatest of All
+              Times"</h3>
+            <span class="bg-blue-500 text-center w-12 py-1 px-0 text-sm rounded-lg">10</span>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex items-center gap-1">
+            <img src="/img/hero/creator.png" alt="Imagen de Usuario" class="w-10 h-10">
+            <div>
+              <p class="text-gray-300 text-xs font-light">Creador</p>
+              <p class="text-sm">Charles Rexach</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-end">
+            <p class="text-gray-300 text-xs font-light">Value</p>
+            <span class="text-sm font-bold">9 Eth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="py-6 px-0 max-w-screen-xl flex items-center justify-center flex-col gap-20">
+      <h2 class="text-center w-5/6 text-3xl font-extrabold lg:w-full">Crea, Aprende y Comparte los NFTs</h2>
+      <div class="flex max-w-3xl justify-around items-start flex-wrap gap-5 lg:max-w-full ">
+        <!-- Card 1 -->
+        <div
+          class="flex flex-col items-center justify-center w-11/12 gap-5 px-8 py-10 text-center bg-gray-700 rounded-lg h-80 sm:w-72 sm:h-72">
+          <img src="/img/info/info-icon.png" alt="Icono nft" class="w-12">
+          <h3 class="text-lg font-semibold">Configura tu wallet</h3>
+          <p class="w-11/12 text-sm font-light text-gray-300">Una vez que haya configurado la billetera de su elección,
+            conéctela a OpenSea</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex flex-col items-center justify-center w-11/12 gap-5 px-8 py-10 text-center bg-gray-700 rounded-lg h-80 sm:w-72 sm:h-72">
+          <img src="/img/info/info-icon.png" alt="Icono nft" class="w-12">
+          <h3 class="text-lg font-semibold">Agregá tus NFTs</h3>
+          <p class="w-11/12 text-sm font-light text-gray-300">Una vez que haya configurado la billetera a elección,
+            busca los NFTs de NUCBA y adquiere los que mas te gusten.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex flex-col items-center justify-center w-11/12 gap-5 px-8 py-10 text-center bg-gray-700 rounded-lg h-80 sm:w-72 sm:h-72">
+          <img src="/img/info/info-icon.png" alt="Icono nft" class="w-12">
+          <h3 class="text-lg font-semibold">¡Colecciónalos!</h3>
+          <p class="w-11/12 text-sm font-light text-gray-300">A partir de ahora, formas parte de la comunidad de NUCBA
+            NFT y vas a poder acceder a contenidos educativos exclusivos sobre el mundo crypto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

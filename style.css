@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply bg-slate-900 fixed w-full flex justify-between items-center py-1 px-7 mx-auto h-16 flex-col top-0 sm:flex-row sm:py-0;
+  }
+}
